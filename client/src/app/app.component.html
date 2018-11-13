@@ -1,0 +1,8 @@
+<div class="chat-popup" id="myForm">
+    <h1>Chat</h1>
+
+    <label for="msg"><b>Message</b></label>
+    <textarea placeholder="Type message.." name="msg" required></textarea>
+    <div *ngFor="let item of chat">{{item}}</div>
+    <button class="btn" (click)="send()">Send</button>
+</div>
